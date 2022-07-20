@@ -1,0 +1,78 @@
+:root{
+    --main-header-color : #fff;
+    --main-bg-color : #383838;
+    --second-bg-color : #242424;
+    --main-accent-color: #6a1b9a;
+    --main-text-color: #fff;
+    --second-text-color: #AAA;
+}
+
+body{
+    background-color: #000;
+    padding-top: 1em;
+}
+
+.chat_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 400px 60px;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei New", "Microsoft YaHei", "微软雅黑", 宋体, SimSun;
+    font-size: 12px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.header{
+    background-color: var(--main-header-color);
+    text-align: center;
+}
+.chat{
+    max-height: 440px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.controls_container{
+    display: grid;
+    grid-template-rows: 30px 30px;
+    grid-template-columns: 5fr 1fr;
+}
+.controls_container .input{
+    border: 0;
+    outline: none;
+    padding-left: 1em;
+    background-color: var(--second-bg-color);
+    color: var(--main-text-color);
+}
+.controls_container .button{
+    border: 0;
+    background-color: var(--main-accent-color);
+    color: var(--main-text-color);
+}
+.name_input{
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 2;
+}
+.content_input{
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 2; 
+    grid-row-end: 3;
+}
+.controls_button{
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    grid-row-start: 1; 
+    grid-row-end: 3;
+}
+
+.message{
+    border-bottom: 2px solid #313131;
+    padding: 5px;
+}
+.name_message{
+    margin-bottom: 5px;
+    color: var(--second-text-color);
+}

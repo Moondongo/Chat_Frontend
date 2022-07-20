@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SUENALIVE</title>
+</head>
+<body>
+    <div class="chat_container">
+        <div class="header">
+            <a href="https://suenalive.com/" target="_blank">
+                <img src="./logo2.png" width="100px">
+            </a>
+        </div>
+        <div id="chat" class="chat"></div>
+        <form autocomplete="off" id="message">
+            <div id="controls" class="controls_container">
+                <input class="name_input input" minlength="1" maxlength="50" type="text" id="author" placeholder="Nombre" />
+                <input class="content_input input" minlength="1"  maxlength="255" type="text" id="content" placeholder="Mensaje" />
+                <input class="controls_button button" type="submit" value="Enviar" />
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
