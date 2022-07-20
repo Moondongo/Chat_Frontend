@@ -1,5 +1,7 @@
 const hostname = window.location.hostname
-const socket = io("https://chatservermon.herokuapp.com/");
+const socket = io("http://ec2-18-231-59-211.sa-east-1.compute.amazonaws.com:3000", {
+    withCredentials: true
+});
 document.addEventListener("DOMContentLoaded", start);
 socket.emit('init', hostname);
 
